@@ -47,7 +47,7 @@
 // Define the compass
 LSM303 compass;
 // Set min and max variables for calibration
-LSM303::vector running_min = {2047, 2047, 2047}, running_max = {-2048, -2048, -2048};
+LSM303::vector<int16_t> running_min = {2047, 2047, 2047}, running_max = {-2048, -2048, -2048};
 
 // Define a struct to store data to
 struct config_t
